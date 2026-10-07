@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Keller, W.J. & Keuning, J.W. (2017), *Breadth Momentum and Vigilant Asset Allocation (VAA)*, SSRN **3002624** |
-| **Paper** | [SSRN 3002624](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3002624) (37 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 3002624](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3002624) (37 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/vaa.py`](../strategies/vaa.py) |
 | **Fidelity** | ✅ Faithful for both, on the paper's own tickers — see *Deviations* for the footnote that settles it. |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Rules, as published
 

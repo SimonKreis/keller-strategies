@@ -38,8 +38,9 @@ logs/
 # tests/test_ca_orders.py requires the code to reproduce it byte for byte.
 !examples/*.csv
 
-# The source papers. SSRN's terms allow a personal download, not a public copy, so they stay
-# on the maintainer's machine; README.md and strategy_specs/ link each one on SSRN.
+# The source papers. SSRN's terms allow a personal download, not a public copy; README.md and
+# strategy_specs/ link each one on SSRN. The folder is retired (specs replace it); this line
+# stays as a guard so a downloaded PDF is never committed.
 academic-papers/
 
 # IDEs

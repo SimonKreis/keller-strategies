@@ -3,14 +3,14 @@
 | | |
 |---|---|
 | **Source** | Keller, W.J. (2023), *Hybrid Asset Allocation (HAA)*, SSRN **4346906** |
-| **Paper** | [SSRN 4346906](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4346906) (15 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 4346906](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4346906) (15 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/haa.py`](../strategies/haa.py) |
 | **Fidelity** | ✅ Faithful. Verified line-by-line against the PDF by two independent audits, 2026-07-28. |
 
 > **Written from the PAPER, not from the code.** A spec derived from the implementation is
 > circular: it agrees with the code even when the code is wrong, which is how the pre-2026-07
 > specs in this folder passed every review while the engine around them was broken. Page
-> numbers refer to the local PDF. Silence under *Deviations* means "matches the paper".
+> numbers refer to the SSRN PDF. Silence under *Deviations* means "matches the paper".
 
 ## Rules, as published
 

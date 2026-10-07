@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Antonacci, G. (2012), *Risk Premia Harvesting Through Dual Momentum*, SSRN **2042750**. First version 2012-04-18; this version 2016-10-01. First place, 2012 NAAIM Wagner Awards. |
-| **Paper** | [SSRN 2042750](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2042750) (37 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 2042750](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2042750) (37 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/gem.py`](../strategies/gem.py), [`strategies/gem_leveraged.py`](../strategies/gem_leveraged.py) |
 | **Fidelity** | `DM_G8_Composite` was **proxy** — **DELETED 2026-09-23**, see below. `GEM_G2_Classic` is **proxy**. `DM_G3_Leveraged_2X` is **custom**. |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Deleted, 2026-09-23
 
@@ -87,7 +87,7 @@ represent a flight toward quality."
 
 **Source:** *Dual Momentum Investing* (McGraw-Hill, 2014) and the published GEM decision
 tree (optimalmomentum.com). Stated assets: S&P 500, MSCI ACWI ex-US, Barclays US Aggregate.
-There is no SSRN PDF of the book in `academic-papers/`, which is why the fidelity pin holds
+The book has no SSRN paper, which is why the fidelity pin holds
 the book title rather than a paper number.
 
 **The decision tree, in the BOOK's order — which is NOT this paper's order:**

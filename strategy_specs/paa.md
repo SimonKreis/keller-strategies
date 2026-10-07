@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Keller, W.J. & Butler, A. (2016), *Protective Asset Allocation (PAA): A Simple Momentum-Based Alternative for Term Deposits*, SSRN **2759734** |
-| **Paper** | [SSRN 2759734](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2759734) (24 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 2759734](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2759734) (24 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/paa.py`](../strategies/paa.py) |
 | **Fidelity** | ✅ Faithful. |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Rules, as published
 

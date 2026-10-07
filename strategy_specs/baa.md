@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Keller, W.J. (2022), *Relative and Absolute Momentum in Times of Rising/Low Yields: Bold Asset Allocation (BAA)*, SSRN **4166845** |
-| **Paper** | [SSRN 4166845](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4166845) (14 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 4166845](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4166845) (14 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/baa.py`](../strategies/baa.py) |
 | **Fidelity** | ✅ Faithful for G12, G4 and G1_SPY. |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Rules, as published
 

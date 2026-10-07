@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Keller, W.J. & Keuning, J.W. (2018), *Defensive Asset Allocation (DAA)*, SSRN **3212862** |
-| **Paper** | [SSRN 3212862](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3212862) (29 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 3212862](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3212862) (29 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/daa.py`](../strategies/daa.py) |
 | **Fidelity** | ✅ Faithful for G12, G4 and G6. The leveraged sizes are custom universes (`U6` and `U15`, also custom, were deleted 2026-07-28). |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Rules, as published
 

@@ -156,7 +156,7 @@ Fidelity is claimed **per strategy, never in blanket form**. See
 [`strategy_specs/`](strategy_specs), where each spec cites the paper and page and lists its
 deviations, and [`KNOWN_GAPS.md`](KNOWN_GAPS.md) §5 for the summary. Each paper is linked on
 SSRN below; the PDFs themselves are not redistributed here (SSRN's terms allow a personal
-download, not a public copy). Keep yours in `academic-papers/`, which is gitignored.
+download, not a public copy); download your own copy from the link.
 
 | Family | Strategy | Source paper (SSRN) |
 |--------|----------|---------------------|
@@ -183,8 +183,9 @@ vanished), and kept, it alone would have held every other row's window at 2008-0
 **Removed on 2026-07-28:** FAA, MAA, EAA, LAA, RAA and CAA. Across eight named drawdown episodes
 none of them ever outperformed every retained strategy, none implemented its source paper
 faithfully, and LAA measured ρ = 0.93 against the retained Golden Butterfly benchmark. Rationale
-and evidence: [`KNOWN_GAPS.md`](KNOWN_GAPS.md) §6. Their papers remain on
-SSRN for reference.
+and evidence: [`KNOWN_GAPS.md`](KNOWN_GAPS.md) §6. Their papers remain on SSRN, and their
+paper-side specs remain in [`strategy_specs/`](strategy_specs) (`faa.md`, `maa.md`, `eaa.md`,
+`laa.md`, `raa.md`, `caa.md`), with `mpt.md` for the MPT paper that was never implemented.
 
 Detailed per-strategy parameter specs are in [`strategy_specs/`](strategy_specs); the
 [TIMELINE.md](TIMELINE.md) traces the evolution of TAA from Faber to Keller, and

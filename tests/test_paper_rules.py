@@ -668,8 +668,7 @@ class TestFidelityAgainstSource(unittest.TestCase):
 
         The PDFs are not redistributed (SSRN's terms allow a personal download, not a public
         copy), so the public guarantee is a LINK: every SSRN number a fidelity pin cites must be
-        linked from the README or a strategy spec. Where the gitignored `academic-papers/`
-        exists — the maintainer's machine — each cited paper must also have its local copy.
+        linked from the README or a strategy spec.
         """
         import glob
         import re
@@ -677,18 +676,12 @@ class TestFidelityAgainstSource(unittest.TestCase):
         docs = [os.path.join(root, 'README.md')] + glob.glob(
             os.path.join(root, 'strategy_specs', '*.md'))
         linked = ''.join(open(p, encoding='utf-8').read() for p in docs)
-        papers_dir = os.path.join(root, 'academic-papers')
-        local = ''.join(os.listdir(papers_dir)) if os.path.isdir(papers_dir) else None
         cited = {m for _, t1, t2 in self.EXPECTED.values()
                  for tok in (t1, t2)
                  for m in re.findall(r'SSRN (\d+)', tok)}
         for ssrn in sorted(cited):
             self.assertIn(f'abstract_id={ssrn}', linked,
                           f'SSRN {ssrn} is cited by a fidelity pin but linked from no doc')
-            if local is not None:
-                self.assertIn(ssrn, local,
-                              f'SSRN {ssrn} is cited by a fidelity pin but has no local copy '
-                              f'in academic-papers/')
 
 
 class TestDocsQuoteTheRegistrySize(unittest.TestCase):

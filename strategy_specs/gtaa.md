@@ -3,11 +3,11 @@
 | | |
 |---|---|
 | **Source** | Faber, M.T. (2006), *A Quantitative Approach to Tactical Asset Allocation*, SSRN **962461** |
-| **Paper** | [SSRN 962461](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=962461) (70 pp.) — not redistributed here; keep a copy in the gitignored `academic-papers/` |
+| **Paper** | [SSRN 962461](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=962461) (70 pp.) — not redistributed here; download it from SSRN |
 | **Implementation** | [`strategies/gtaa.py`](../strategies/gtaa.py) |
 | **Fidelity** | Proxy (relabelled from faithful on 2026-07-29, see below). `GTAA_G5` is the only registered variant; the two `G13` variants were deleted 2026-07-28. |
 
-> Written from the PAPER, not from the code. Page numbers refer to the local PDF.
+> Written from the PAPER, not from the code. Page numbers refer to the SSRN PDF.
 
 ## Rules, as published
 
