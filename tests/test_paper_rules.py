@@ -696,14 +696,13 @@ class TestDocsQuoteTheRegistrySize(unittest.TestCase):
     #: Documents that SHIP. They are in the public repository, so a fresh clone must contain
     #: every one of them and a missing entry is a failure, not a skip.
     DOCS = ('README.md', 'ARCHITECTURE.md', 'KNOWN_GAPS.md', 'LEVERAGE.md',
-            'CONTRIBUTING.md')
+            'CONTRIBUTING.md', 'AGENTS.md', 'CLAUDE.md', 'SETUP.md',
+            os.path.join('memory', 'PROJECT.md'))
 
-    #: Agent-facing documents. They are gitignored and exist only on a working machine, but
-    #: they quote the same registry counts and go stale in exactly the same way, so they are
-    #: pinned WHEN PRESENT and passed over when absent. A public clone has none of them and
-    #: must still go green -- which is why they cannot simply be added to DOCS above.
-    LOCAL_DOCS = ('AGENTS.md', 'CLAUDE.md', 'SETUP.md',
-                  os.path.join('memory', 'PROJECT.md'))
+    #: Documents that exist only on a working machine (gitignored): pinned WHEN PRESENT and
+    #: passed over when absent. Empty since 2026-10-07, when the agent-facing documents
+    #: became tracked and moved into DOCS.
+    LOCAL_DOCS = ()
 
     def _documents(self):
         """Yield (name, text) for every document this checkout actually has.

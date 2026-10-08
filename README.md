@@ -426,7 +426,6 @@ in each file's module docstring.
 | `ca_execution_gap.py` | Measures how far each Canadian fund drifts from the US ETF it stands in for, in USD, all twelve lines of the mapping. The six like-for-like lines are the yardstick: what the Canadian wrapper alone costs. The figures live in [`EXECUTION_CA.md`](EXECUTION_CA.md). |
 | `fx_rate.py` | The USD/CAD rate the Canadian path uses (typed by hand, else the Bank of Canada's daily rate, else Yahoo) or an error: there is no default rate. |
 | `projection.py` | Projects the accounts forward on the strategy's haircut record (`common/projection.py`): P10 / median / P90 after tax, nominal and in today's dollars, against its comparator and a savings account. Reads the `PROJECTION` block of `user_config.json`; `--demo` uses the example's fictional accounts. Measures through `backtest_driver`, at leverage 1.0. |
-| `backup_context.py` | Maintainer-only. It copies this repository's gitignored agent-context files into a separate repository so they have versions. Those files are not in a clone, so on a fresh checkout this tool finds nothing to copy and does nothing. |
 
 ## Why momentum?
 
