@@ -278,7 +278,7 @@ personal config, and the loader says so.
 | Regime partitions (NBER / S&P 500 / FOMC / CPI) | each strategy's **full** measurable history, cut at frozen boundaries | **frozen in code** |
 | Named stress episodes (9) | each strategy's **full** measurable history | **frozen in code** |
 | Before/after publication | full history, split at the family's publication date | **frozen in code** |
-| Era floor (2000-01) | owner's decision, 2026-09-23, once every published strategy was measurable there; `DATA_START_DATE` (1998-11) is derived from it | **decided, then verified against the data** |
+| Era floor (2000-01) | decided 2026-09-23, once every published strategy was measurable there; `DATA_START_DATE` (1998-11) is derived from it | **decided, then verified against the data** |
 | Ranked table, chart, CAGR/Sharpe/Sortino/UPI | era floor → last complete month, raised to the latest inception among the strategies compared | **derived from data** |
 
 Three properties are asserted by `tests/test_eras.py` and will fail the build if they regress:
@@ -453,15 +453,15 @@ does NOT repair, or does not model:
   Sharpe is still the Sharpe of a pick made on these decades.
 * **The cash rate is held flat** at the era's realised level, and inflation is a number you
   type. Neither is modelled.
-* **Currency-neutral, by the owner's decision (2026-09-23).** The strategies are measured in
+* **Currency-neutral, by design (2026-09-23).** The strategies are measured in
   USD and no exchange-rate path is modelled. Amounts are entered in a declared currency and
   shown in the other at today's USD/CAD, held constant — a display, not a model. The 15%
-  withholding on US dividends (unrecoverable in a CELI) and the Canadian execution gap
+  withholding on US dividends (unrecoverable in a tax-free account) and the Canadian execution gap
   are absent too; the gap is measured line by line in `EXECUTION_CA.md`, not fed in here.
 * **Tax is a mechanism, not a return.** Rates, inclusion and contribution caps are the
-  owner's inputs; no CRA rule is written into the code. Every taxable gain is treated as
+  user's inputs; no tax-authority rule is written into the code. Every taxable gain is treated as
   realised in the year it is made (turnover of 6-12 a year makes deferral the exception),
-  every distribution as a capital gain, and a CELIAPP withdrawal as qualifying.
+  every distribution as a capital gain, and a first-home account withdrawal as qualifying.
 * **Leverage is 1.0**, whatever `LEVERAGE_FACTOR` says (EXEC-001).
 
 ## 5. Fidelity gaps in surviving strategies

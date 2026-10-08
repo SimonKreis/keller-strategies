@@ -38,10 +38,11 @@ visibility change) and is the maintainer's call. *Consequence:* the "why" can ag
 commit message, but decisions with a criterion still belong here, because a commit message is
 not found by someone reading the code.
 
-**2026-09-23 — the era moved to 2000-01, and `DM_G8_Composite` left the registry.** A QA
-question ("why do the numbers change when I tick a different set of strategies?") became "how
-do we measure every strategy through a real crisis, uniformly?". Synthetic data and a shorter
-history were considered and rejected; the chosen route was longer history on admitted donors.
+**2026-09-23 — the era moved to 2000-01, and `DM_G8_Composite` left the registry.** The
+numbers changed with the set of strategies selected, because the shared window depended on
+it. The question became how to measure every strategy through a real crisis, uniformly.
+Synthetic data and a shorter history were rejected; the chosen route was longer history on
+admitted donors.
 
 * **Donors, admitted by a yardstick the market sets.** `common/data_engine.HISTORY_BACKFILL`
   splices an older index mutual fund or a published index (and the LBMA gold fixing, the one
@@ -88,16 +89,15 @@ to buy the thinner `.U` classes, contrary to its own comment; and whole-unit rou
 reported per sleeve as "NOT fully invested", burying real shortfalls.
 
 **The savings projection** (`common/projection.py`, `tools/projection.py`, dashboard
-**Projection** tab). Three return sources were offered; the HAIRCUT backtest was chosen as the
-only one (no typed rate, no raw CAGR): `SR_used × σ` over the era's cash rate, the record's
+**Projection** tab). The HAIRCUT backtest is the only return source (no typed rate, no raw
+CAGR): `SR_used × σ` over the era's cash rate, the record's
 demeaned excess resampled for the spread. `margin_sizing.haircut_sharpe` was extracted from
 `recommend_leverage` so both read one definition (golden master unmoved). Tax by account type
 on user-entered rates, no tax rule in the code; starting balances from `BROKER_ACCOUNTS`. The
 tab never copies the example's fictional account kinds onto real accounts: a kind is chosen.
 Limits in `KNOWN_GAPS.md` §4 — above all that recentring keeps the sample's SHAPE, so HAA's
 shallow record projects near-zero odds of ending below the money put in.
-*Overturn if:* a typed return is wanted instead of the haircut one; that was offered and
-declined. The projection is **currency-neutral**: no FX model; amounts are entered in one
+*Overturn if:* a typed return is preferred to the haircut one. The projection is **currency-neutral**: no FX model; amounts are entered in one
 declared currency (`PROJECTION.currency`) and also shown in the other at today's USD/CAD, held
 constant (`tools/fx_rate.py`; no default rate).
 
@@ -321,7 +321,7 @@ features print-free.
 | Removing VAA's `> 0` offensive filter | 2026-07-29 | The identical line was a real defect in DAA and is deliberately **left in place** in VAA: provably unreachable at VAA's registered T/B, 0% measured divergence. |
 | Date pickers / arbitrary start dates | 2026-07-28 | Replaced by `common/eras.py`: a derived era floor and four exhaustive, disjoint partitions dated by outside bodies (NBER, S&P bull/bear, FOMC, BLS). Choosing a start date is choosing a result. |
 | Re-modelling LETF financing cost or decay | — | Already inside the products' real price history. Re-charging it double-counts. |
-| Deciding leverage admission from backtest results | 2026-07-29 | *"On va faire parler les chiffres de toute façon"* — so the admission rule must be structural and pre-registered, or the measurement is contaminated by it. |
+| Deciding leverage admission from backtest results | 2026-07-29 | Once the numbers exist they will be read, so the admission rule must be structural and pre-registered, or the measurement is contaminated by it. |
 
 **Every figure produced before the 2026-07-28 rebuild is void.** The pre-rebuild engine filled
 at the signal close, halved costs, and at one point gave DAA, VAA, PAA and RAA identical

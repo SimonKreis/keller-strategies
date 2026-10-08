@@ -552,7 +552,7 @@ multiple-testing haircut reads the full registry's population from `run_facts.js
 base times the **fund's own multiple** for a leveraged one (60% at 2x, 90% at 3x), ×1.5 again
 for the crisis variant that is the one reported; `r_b` 6% against a **measured** `r_f` of
 1.853% (the era's BIL series, constructed from `^IRX` before 2007-05; 1.246% over the 2008-06
-window); `k=3`; capacity unsupplied. Not the owner's broker — there is not one yet. The 2026-07-30
+window); `k=3`; capacity unsupplied. No specific broker is modelled. The 2026-07-30
 revision of this table used a flat 75% for any LETF book and an assumed 1.9% cash rate; the
 per-ticker rule is stricter on 3x and the wider borrow spread lowers every Kelly figure, which
 is why several `f_kelly` entries moved.
@@ -1327,8 +1327,8 @@ touches that. **Different rule, unchanged verdict, permanently.**
 ### L8 — 3x is registered, and carries `role='exploratory'`
 
 > **⚠️ REVERSED 2026-07-29.** This entry used to read *"2x only — 3x variants are constructible
-> but none is registered"*, and gave two reasons. **One of them was a bad argument and the
-> owner rejected it.**
+> but none is registered"*, and gave two reasons. **One of them was a bad argument, and was
+> withdrawn.**
 
 The rejected reason was correlation: every 3x twin measures **ρ ≈ 0.997–0.999** against its 2x
 sibling, so it looked derivable and redundant. It is not, and the old text carried its own

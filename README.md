@@ -131,7 +131,7 @@ environment automatically, later runs start instantly.
   the same band from opposite sides: advice at 1.0–1.3x, month-end calls material only near
   2.0x, the gap being exactly the intraperiod factor monthly paths cannot see. The Kelly
   column is the f that maximises median CAGR across the resampled histories, ruin included.
-- **Projection tab**: give each broker account a kind (CELI, REER, CELIAPP, non-registered),
+- **Projection tab**: give each broker account a kind (registered or not, as `common/projection.py` defines them),
   a monthly effort and your tax rates, and get the P10 / median / P90 after-tax value over
   your horizon, beside a benchmark, a savings account and the money you put in. The return is
   the strategy's haircut Sharpe times its volatility, never its CAGR, and the assumptions
@@ -194,7 +194,7 @@ Detailed per-strategy parameter specs are in [`strategy_specs/`](strategy_specs)
 > **Our take (a preference, not an impartial ranking).** We lean toward **HAA** for
 > *structural* reasons: one external canary (TIP) rather than a breadth count, a defensive
 > sleeve that chooses between BIL and IEF instead of defaulting to one, and the most recent of
-> Keller's papers. We run **G12** for asset-class breadth (twelve sleeves across US/ex-US
+> Keller's papers. We favour **G12** for asset-class breadth (twelve sleeves across US/ex-US
 > equity, REITs, commodities, gold and three bond tenors), **not** because it ranks first.
 >
 > That distinction is deliberate. This README used to claim HAA_G12 had "the family's best
@@ -275,7 +275,7 @@ EXECUTION_MODE     = False          # False = backtest, True = live target weigh
   funds in CAD or USD) is a separate driver, `python -m tools.ca_orders`. It is not a
   strategy and not in the registry; see [`EXECUTION_CA.md`](EXECUTION_CA.md).
 - **Savings projection** covers what the accounts in `BROKER_ACCOUNTS` could become with monthly
-  contributions, tax by Canadian account type (CELI, REER, CELIAPP, non-registered) and
+  contributions, tax by account type (the kinds `common/projection.py` defines) and
   inflation: `python -m tools.projection` (`--demo` for the example's fictional accounts). The
   return is not the backtest's CAGR: it is the Sharpe left after the same two haircuts the
   margin sizing applies, times the strategy's volatility, resampled from its own record and

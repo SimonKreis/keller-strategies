@@ -11,7 +11,7 @@
 
 ## Deleted, 2026-09-23
 
-`DM_G8_Composite` left the registry at the owner's decision, the day the era moved to 2000-01.
+`DM_G8_Composite` left the registry the day the era moved to 2000-01.
 Every other published entry reached 2000-01 on mutual-fund and index donors
 (`common/data_engine.HISTORY_BACKFILL`); this one could not, because its mortgage-REIT leg has
 no admissible donor. The only candidates are the mortgage REITs still listed, and an
@@ -22,7 +22,7 @@ shared window at 2008-07 for every other row.
 **What was given up, stated so it is not rediscovered as an oversight:** the section below,
 *Why it is kept*, argued that this was the most mechanistically distinct entry in the registry
 (ρ_max 0.705) in a suite of ~3 effective independent bets. That argument was known and was
-outweighed: the owner judged the entry had never distinguished itself on results, and the
+outweighed: the entry had never distinguished itself on results, and the
 cost of keeping it was eight years of shared window for everyone else. The participation ratio
 moved from 2.65 to 2.58 effective bets the same day, with the era change; the two causes have
 not been separated. The rest of this spec is kept as the record of what the entry was.
