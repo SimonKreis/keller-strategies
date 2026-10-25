@@ -11,6 +11,8 @@ An open-source Python engine for backtesting and live-execution of published
 **Tactical Asset Allocation (TAA)** strategies, based on the peer-reviewed research of
 Dr. Wouter Keller, Meb Faber, Gary Antonacci, and others.
 
+**Simon Kreis & Claude.** Made with AI, mainly Claude (Anthropic), which contributed in part or in whole to the work. Simon Kreis is responsible for the result. An implementation of published strategies by Wouter Keller and others.
+
 The suite implements the Keller canon (HAA, DAA, VAA, BAA, PAA), verified line-by-line against
 the source papers, plus Antonacci's dual momentum (GEM) and Faber's trend-following GTAA. It
 compares their performance interactively and generates exact monthly rebalancing signals,
