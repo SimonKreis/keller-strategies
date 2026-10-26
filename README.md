@@ -1,5 +1,7 @@
 # Keller Strategies
 
+**English** · [Français](README.fr.md)
+
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![NiceGUI](https://img.shields.io/badge/NiceGUI-3.0%2B-5898D4)
 ![pandas](https://img.shields.io/badge/pandas-2.2%2B-151058?logo=pandas&logoColor=white)
